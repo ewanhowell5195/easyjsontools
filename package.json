@@ -1,6 +1,6 @@
 {
   "name": "easyjsontools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "Tools for working with JSON objects",
   "exports": "./index.js",

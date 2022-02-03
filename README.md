@@ -32,7 +32,7 @@ import {ensureJSON, cleanJSON} from "easyjsontools"
 
 ## ensureJSON(data, keys, value)
 
-ensureJSON makes sure that a json branch exists, so that you do not have to create each level manually
+ensureJSON makes sure that a json branch exists. This is useful for working on objects where the branch doesn't always exist.
 
 ### objects
 ```js
