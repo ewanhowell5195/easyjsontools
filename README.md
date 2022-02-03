@@ -1,6 +1,6 @@
 # easyjsontools
 
-> Tools for working with JSON objects
+### Tools for working with JSON objects
 
 ```js
 const data = {}
@@ -25,14 +25,14 @@ $ npm i easyjsontools
 
 ## Usage
 ```js
-import {ensureJSON, cleanJSON} from "./easyjsontools/index.js"
+import {ensureJSON, cleanJSON} from "easyjsontools"
 ```
 
 ---
 
 ## ensureJSON(data, keys, value)
 
-> ensureJSON makes sure that a json branch exists, so that you do not have to create each level manually
+ensureJSON makes sure that a json branch exists, so that you do not have to create each level manually
 
 ### objects
 ```js
@@ -68,9 +68,9 @@ data.settings.words.ignored.push("hello")
 console.log(data) // { settings: { words: { ignored: [ 'hello' ] } } }
 ```
 
-> Ensuring with objects or arrays will not overwrite if it already exists
+Ensuring with objects or arrays will not overwrite if it already exists
 
-> You can also use ensureJSON to directly set numbers, strings, booleans, and nulls
+You can also use ensureJSON to directly set numbers, strings, booleans, and nulls
 
 ```js
 const data = {}
@@ -81,13 +81,13 @@ ensureJSON(data, ["dictionary", "words", "example"], "a thing characteristic of 
 console.log(data) // { dictionary: { words: { example: 'a thing characteristic of its kind or illustrating a general rule.' } } }
 ```
 
-> Ensuring with numbers, strings, booleans, and nulls will overwrite anything that isn't an array or an object
+Ensuring with numbers, strings, booleans, and nulls will overwrite anything that isn't an array or an object
 
 ---
 
 ## cleanJSON(data)
 
-> cleanJSON removes any empty objects and arrays from a json structure
+cleanJSON removes any empty objects and arrays from a json structure
 
 ```js
 const data = {uploaded: {files: {images: []}, status: "failed"}}
