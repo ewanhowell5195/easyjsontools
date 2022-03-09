@@ -1,6 +1,6 @@
 {
   "name": "easyjsontools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "description": "Tools for working with JSON objects",
   "exports": "./index.js",
@@ -9,5 +9,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ewanhowell5195/easyjsontools.git"
-  }
+  },
+  "keywords": [
+    "json",
+    "utility",
+    "tool",
+    "cleanjson",
+    "ensurejson",
+    "clean",
+    "ensure"
+  ]
 }
